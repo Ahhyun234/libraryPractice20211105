@@ -1,6 +1,7 @@
 package com.nepplus.librarypractice20211105
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
             val performedListener = object : PermissionListener {
                 override fun onPermissionGranted() {
 //                    권한이 획득 되었을 때 실행 할 코드
+//                    Call 액션을 권한 ok일 때 만 활용
+                    val myUri = Uri.parse("tel:010-5555-5555")
+                    val myIntent = Intent(Intent.ACTION_CALL,myUri)
+                    startActivity(myIntent)
                     
 
                 }
