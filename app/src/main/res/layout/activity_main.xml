@@ -21,7 +21,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             app:civ_border_width="3dp"
-            app:civ_border_color="#FFFF00"
+            app:civ_border_color="#ababab"
             app:civ_border_overlay="true"
             android:src="@drawable/iu"/>
 
@@ -63,6 +63,7 @@
             android:id="@+id/btnCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ababab"
             android:text="전화걸기"/>
 
     </LinearLayout>
