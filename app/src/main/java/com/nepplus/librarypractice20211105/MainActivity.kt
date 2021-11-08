@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import kotlinx.android.synthetic.main.activity_main.*
@@ -61,6 +62,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setupValues() {
+
+        Glide.with(this).load("https://i.ytimg.com/vi/NLy6UdpBlPw/maxresdefault.jpg").into(imgAction)
 
         btnCall.setOnClickListener {
 
